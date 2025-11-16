@@ -144,7 +144,8 @@ for i in range((end_date-MODEL_START_DATE).days):
             tranche_commitment = tranche['power']
             
             if tranche_commitment > delivery_credit_balance:
-                power_delayed += (power_commitment - delivery_credit_balance)
+                power_delayed += (tranche_commitment - delivery_credit_balance)
+                st.write(power_delayed)
                 total_power_delayed += power_delayed
                 delivery_credit_balance = 0
                 tranche['delay'] += 1
