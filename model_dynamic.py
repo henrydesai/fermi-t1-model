@@ -42,7 +42,7 @@ daily_ld_per_mw_usd = BASE_RENT_KW_MONTH_USD*1000/30*LD_BASE_RENT_MULTIPLE
 SCHEDULE = []
 
 # tranche 1
-SCHEDULE.append({'date': datetime.date(2026,4,1), 'power':452, 'delay':0})
+SCHEDULE.append({'date': datetime.date(2026,5,31), 'power':452, 'delay':0})
 # tranche 2
 SCHEDULE.append({'date': datetime.date(2026,9,1), 'power':300, 'delay':0})
 #tranche 3
